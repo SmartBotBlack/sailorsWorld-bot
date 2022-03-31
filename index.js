@@ -2,8 +2,8 @@
   let token;
   token = "WOOD";
   token = "DUBLON";
-  const x= 1;
-  const y= 1;
+  const x = 1;
+  const y = 1;
   const PAUSE_TASK = 5 * 1000;
   const PAUSE_BUTTON = 5 * 1000;
   const PAUSE_WAIT_POPUP = 10 * 1000;
@@ -50,9 +50,7 @@
         await new Promise((res) => setTimeout(res, PAUSE_BUTTON));
         const tiles = document.querySelectorAll(".territories__item");
         for (let i = 0; i < tiles.length; i++) {
-          if (
-            tiles[i].textContent.includes(` ${x} : ${y} `)
-          ) {
+          if (tiles[i].textContent.includes(` ${x} : ${y} `)) {
             tiles[i].click();
             break;
           }
