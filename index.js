@@ -50,7 +50,7 @@
         await new Promise((res) => setTimeout(res, PAUSE_BUTTON));
         const tiles = document.querySelectorAll(".territories__item");
         for (let i = 0; i < tiles.length; i++) {
-          if (tiles[i].textContent.includes(` ${x} : ${y} `)) {
+          if (tiles[i].textContent.startsWith(`${x} : ${y} `)) {
             tiles[i].click();
             break;
           }
