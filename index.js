@@ -12,17 +12,17 @@
     await new Promise((res) => setTimeout(res, PAUSE_TASK));
 
     let btns = document.getElementsByClassName("button-desk");
-    let repairText = "Repair";
+//     let repairText = "Repair";
 
-    for (let i = 0; i < btns.length; i++) {
-      if (
-        btns[i].textContent.includes(repairText) &&
-        !btns[i].classList.value.includes("-inactive")
-      ) {
-        btns[i].click();
-        await new Promise((res) => setTimeout(res, PAUSE_BUTTON));
-      }
-    }
+//     for (let i = 0; i < btns.length; i++) {
+//       if (
+//         btns[i].textContent.includes(repairText) &&
+//         !btns[i].classList.value.includes("-inactive")
+//       ) {
+//         btns[i].click();
+//         await new Promise((res) => setTimeout(res, PAUSE_BUTTON));
+//       }
+//     }
 
     const claimText = "Claim";
 
